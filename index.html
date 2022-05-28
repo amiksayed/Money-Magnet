@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Magnet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1> Money Magnet </h1>
+    </header>
+
+    <main>
+        <section class="pic-section">
+            <div>
+                <img src="money management.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="money-section">
+            <div class="calculation">
+                <h2> Income </h2>
+                Income: <input type="number" name="income" id="income-input">
+                <p class="income-error-message"></p>
+                <h2> Expenses </h2>
+                Food: <input type="number" name="income" id="food-input"> 
+                <p class="food-error-message"></p>
+                Rent: <input type="number" name="food" id="rent-input">
+                <p class="rent-error-message"></p>
+                Clothes: <input type="number" name="rent" id="cloth-input">
+                <p class="clothes-error-message"></p>
+                <div class="button-container">
+                    <button class="calculate-button" id="calculate-button"> Calculate </button> <br>
+                </div>
+                <div class="expense-balance">
+                    <p class="total-expense"> Total Expenses: &#2547 <span id="expense-display"> 0 </span> </p> 
+                    <p class="balance-error-message"></p>
+                    <p id="balance">Balance: &#2547 <span id="balance-display"> 0 </span></p>
+                </div>
+                <div class="save">
+                    Save: <input type="number" name="save" class="save-input">% <button class="save-button"
+                        id="save-button"> Save
+                    </button>
+                </div>
+                <div class="savings-balance">
+                    <p class="saving-amount"> Saving Amount: &#2547 <span id="saving-amount"> 0 </span> </p>
+                    <p id="remaining-balance"> Remaining Balance: &#2547 <span id="remaining-balance-display"> 0 </span>
+                    </p>
+                    <p class="remaining-balance-error-message"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
