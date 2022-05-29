@@ -1,108 +1,279 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
-h1{
+
+h1 {
     text-align: center;
     color: #C1236D;
     margin-bottom: 40px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
 }
-img{
+
+img {
     width: 100%;
 }
-main{
+
+main {
     display: flex;
     align-items: center;
 }
-.pic-section{
+
+.pic-section {
     width: 50%;
 }
-h2{
+
+h2 {
     text-align: center;
     font-weight: 700;
     font-size: 25px;
     color: white;
     margin: 5px;
 }
-.money-section{
+
+.money-section {
     width: 50%;
     display: flex;
     justify-content: center;
 }
-.calculation{
+
+.calculation {
     color: #212262;
     display: flex;
     flex-direction: column;
-    background-color: #4BAFFD;
+    background: linear-gradient(to right top, #4BACFD, #53D9FF);
     border-radius: 10px;
     width: fit-content;
     padding: 50px 60px;
 }
-.calculation > input{
+
+.calculation>input {
     display: block;
     background-color: rgba(255, 255, 255, 0.671);
     border: none;
     border-radius: 5px;
     padding: 8px;
 }
+
 /* #food-input, #rent-input, #cloth-input{
     margin-bottom: 8px;
 } */
-.income-error-message, .food-error-message, .rent-error-message, .clothes-error-message{
+.income-error-message,
+.food-error-message,
+.rent-error-message,
+.clothes-error-message {
     margin: 0 0 10px;
 }
-.button-container{
+
+.button-container {
     text-align: center;
     margin-top: 15px;
 }
-.calculate-button{
+
+.calculate-button {
     padding: 8px 40px;
     border-radius: 5px;
     border: none;
-    background-color: #C6236D;
+    background-color: #B0236D;
     color: white;
     font-weight: bold;
     font-size: 15px;
 }
-.calculate-button:hover{
+
+.calculate-button:hover {
     background-color: #f7b4d2;
     color: #C6236D;
-    
 }
-.total-expense, .saving-amount, #balance{
+
+.total-expense,
+.saving-amount,
+#balance {
     font-weight: 700;
     font-size: 18px;
     margin: 0;
 }
-#remaining-balance{
+
+#remaining-balance {
     font-weight: 700;
     font-size: 18px;
     margin: 16px 0 0 0;
 }
-.expense-balance, .savings-balance{
+
+.expense-balance,
+.savings-balance {
     text-align: center;
     margin-bottom: 15px;
     margin-top: 15px;
 }
-.save-input {
-   margin: 10px;
-   padding: 8px;
 
-   border-radius: 5px;
-   border: none;
-   background: rgba(255, 255, 255, 0.671);
+.save-input {
+    margin: 10px;
+    padding: 8px;
+
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.671);
 }
+
 .save-button {
-   margin: 10px;
-   padding: 8px 35px;
-   border-radius: 5px;
-   border: none;
-   background-color: #BF236D;
-   color: white;
-   font-weight: bold;
+    margin: 10px;
+    padding: 8px 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #BF236D;
+    color: white;
+    font-weight: bold;
 }
-.save-button:hover{
+
+.save-button:hover {
     background-color: #f7b4d2;
     color: #C6236D;
+}
+
+@media only screen and (max-width: 688px) {
+    h1 {
+        text-align: center;
+        color: #C1236D;
+        margin-bottom: 40px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic-section {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        margin: 5px;
+    }
+
+    .money-section {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .calculation {
+        color: #212262;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to right top, #4BACFD, #53D9FF);
+        border-radius: 10px;
+        width: 100%;
+        padding: 50px 60px;
+    }
+
+    #income-input,
+    #food-input,
+    #rent-input,
+    #cloth-input {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.671);
+        border: none;
+        border-radius: 5px;
+        padding: 4px;
+    }
+
+    /* #food-input, #rent-input, #cloth-input{
+        margin-bottom: 8px;
+    } */
+    .income-error-message,
+    .food-error-message,
+    .rent-error-message,
+    .clothes-error-message {
+        margin: 0 0 10px;
+    }
+
+    .button-container {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .calculate-button {
+        padding: 8px 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: #B0236D;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .calculate-button:hover {
+        background-color: #f7b4d2;
+        color: #C6236D;
+    }
+
+    .total-expense,
+    .saving-amount,
+    #balance {
+        font-weight: 700;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    #remaining-balance {
+        font-weight: 700;
+        font-size: 16px;
+        margin: 16px 0 0 0;
+    }
+
+    .expense-balance,
+    .savings-balance {
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .save {
+        display: flex;
+        position: relative;
+        right: 30px;
+        margin-top: 10px;
+    }
+
+    .save-input {
+        position: relative;
+        bottom: 15px;
+        width: 80px;
+        border-radius: 5px;
+        border: none;
+        background: rgba(255, 255, 255, 0.671);
+    }
+
+    .save-button {
+        position: relative;
+        bottom: 15px;
+        margin: 10px;
+        padding: 8px 25px;
+        border-radius: 5px;
+        border: none;
+        background-color: #BF236D;
+        color: white;
+        font-weight: bold;
+    }
+
+    .save-button:hover {
+        background-color: #f7b4d2;
+        color: #C6236D;
+    }
+
+
+
+
+
 }
