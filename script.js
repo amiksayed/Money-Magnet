@@ -53,7 +53,7 @@ document.getElementById('calculate-button').addEventListener('click', function (
 
 document.getElementById('save-button').addEventListener('click', function () {
     savingAmountDisplay.innerText = incomeInput.value * (saveInput.value / 100);
-    if (balanceDisplay.innerText >= savingAmountDisplay.innerText) {
+    if (parseFloat(balanceDisplay.innerText) >= parseFloat(savingAmountDisplay.innerText)) {
         remainingBalanceDisplay.innerText = balanceDisplay.innerText - savingAmountDisplay.innerText;
         // remainingBalanceErrorMessage.style.display = 'none';
         remainingBalanceDiv.style.display = 'block';
@@ -77,4 +77,5 @@ document.getElementById('calculate-button').addEventListener('blur', function ()
 
 document.getElementById('save-button').addEventListener('blur', function () {
     remainingBalanceErrorMessage.style.display = 'none';
+    remainingBalanceDiv.style.display = 'block';
 })
